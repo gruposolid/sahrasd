@@ -11,3 +11,5 @@ Lembre-se de usar a aba Issues para:
 - bug tracking
 - discutir features
 - TODO de novas features
+
+IMPORTANTE: Projeto criado na Unity v5.5.1
