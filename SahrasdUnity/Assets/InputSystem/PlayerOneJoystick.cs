@@ -4,95 +4,95 @@ using UnityEngine;
 
 public class PlayerOneJoystick : VirtualJoystick
 {
-    public Vector2 LeftAnalogueData()
+    public override Vector2 LeftAnalogueData()
     {
         Vector2 data = Vector2.zero;
-        data.x = Input.GetRawAxis("P1LeftHorizontal");
-        data.y = Input.GetRawAxis("P1LeftVertical");
+        data.x = Input.GetAxisRaw("P1LeftHorizontal");
+        data.y = Input.GetAxisRaw("P1LeftVertical");
         return data;
     }
     
-    public Vector2 RightAnalogueData()
+    public override Vector2 RightAnalogueData()
     {
         Vector2 data = Vector2.zero;
-        data.x = Input.GetRawAxis("P1RightHorizontal");
-        data.y = Input.GetRawAxis("P1RightVertical");
+        data.x = Input.GetAxisRaw("P1RightHorizontal");
+        data.y = Input.GetAxisRaw("P1RightVertical");
         return data;
     }
     
-    public  bool IsStartPressed()
+    public override  bool IsStartPressed()
     {
         return Input.GetButton("P1Start");
     }
     
-    public  bool IsSelectPressed()
+    public override  bool IsSelectPressed()
     {
         return Input.GetButton("P1Select");
     }
     
     // Face Buttons
-    public  bool IsFaceUpPressed()
+    public override  bool IsFaceUpPressed()
     {
         return Input.GetButton("P1FaceUp");
     }
     
-    public  bool IsFaceDownressed()
+    public override  bool IsFaceDownressed()
     {
         return Input.GetButton("P1FaceDown");
     }
     
-    public  bool IsFaceLeftPressed()
+    public override  bool IsFaceLeftPressed()
     {
         return Input.GetButton("P1FaceLeft");
     }
     
-    public  bool IsFaceRightPressed()
+    public override  bool IsFaceRightPressed()
     {
         return Input.GetButton("P1FaceRight");
     }
     
     
     // Arrow Buttons
-    public  bool IsArrowUpPressed()
+    public override  bool IsArrowUpPressed()
     {
         return Input.GetButton("P1ArrowUp");
     }
     
-    public  bool IsArrowDownressed()
+    public override  bool IsArrowDownressed()
     {
         return Input.GetButton("P1ArrowDown");
     }
     
-    public  bool IsArrowLeftPressed()
+    public override  bool IsArrowLeftPressed()
     {
         return Input.GetButton("P1ArrowLeft");
     }
     
-    public  bool IsArrowRightPressed()
+    public override  bool IsArrowRightPressed()
     {
         return Input.GetButton("P1ArrowRight");
     }
     
     
     // Left Shoulder Buttons
-    public  bool IsLeftShoulderPressed()
+    public override  bool IsLeftShoulderPressed()
     {
         return Input.GetButton("P1LeftShoulder");
     }
     
-    public  bool IsLeftTriggerPressed()
+    public override  bool IsLeftTriggerPressed()
     {
         return Input.GetButton("P1LeftTrigger");
     }
     
     
     // Right Shoulder Buttons
-    public  bool IsRightShoulderPressed()
+    public override  bool IsRightShoulderPressed()
     {
         return Input.GetButton("P1RightShoulder");
     }
     
-    public  bool IsRightTriggerPressed()
+    public override  bool IsRightTriggerPressed()
     {
         return Input.GetButton("P1RightTrigger");
     }
